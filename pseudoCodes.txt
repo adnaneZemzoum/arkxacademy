@@ -1,0 +1,221 @@
+Exercise 1:
+ Write pseudocode for a program that takes two numbers as input and displays their sum.
+
+Assume the numbers to be a and b
+print ("enter the first number :")
+read a
+print ("enter the second number :")
+read b
+sum = a+b
+print ("the sum of a and b is :" sum)
+
+-----------------------------------------------------------------------------------
+
+Exercise 2: 
+Write pseudocode for a program that calculates and displays the average of three numbers.
+
+Assume the numbers to be a and b and c
+print ("enter the first number :")
+read a
+print ("enter the second number :")
+read b
+print ("enter the third number :")
+read c
+average = (a+b+c)/3
+print ("the average is :" average)
+
+------------------------------------------------------------------------------------
+
+Exercise 3:
+Write pseudocode for a program that checks if a given number is even or odd and displays the result.
+
+Assume the number to be a 
+print ("enter a number :")
+read a
+rest = a%2
+if (rest == 0)
+	print (a " is even")
+else
+	print (a " is odd")
+
+--------------------------------------------------------------------------------------
+
+Exercise 4: 
+Write pseudocode for a program that finds the maximum number among three given numbers and displays it
+
+Assume the numbers to be a and b and c
+print ("enter the first number :")
+read a
+print ("enter the second number :")
+read b
+print ("enter the third number :")
+read c
+max = a
+if(a > b and a > c)
+	print (a " is the maximum number")
+else if (b > c)
+	print (b " is the maximum number")
+else 
+	print (c " is the maximum number")
+	
+--------------------------------------------------------------------------------------
+Exercise 5: 
+Write pseudocode for a program that calculates the factorial of a given number and displays the result.
+
+Assume the number to be a 
+do
+print ("enter a positif number :")
+read a
+wihle (a < 0)
+if( a == 0)
+	print ( "the factorial of :" a "is : 1")
+else 
+fact = 1
+for i = 1 to a
+	fact = fact * i
+end for
+print (" the factorial of :"a "is : " fact)
+--------------------------------------------------------------------------------------
+Exercise 6:
+Write pseudocode for a program that prompts the user for their age and displays a message indicating whether
+they are eligible to vote (considering a voting age of 18 years).
+
+
+Assume the age to be age
+print (" enter your age : )
+read age
+if (age >= 18 )
+	 print ("you can vote")  
+else
+	print ("you can not vote")
+
+--------------------------------------------------------------------------------------
+Exercise 7: 
+Write pseudocode for a program that prompts the user for a sentence and counts the number of words in it
+
+Assume the number of words to be number
+print ("enter a sentence :")
+read sentence
+mumber = 0
+for i=0 to sentence length
+if (sentence[i] == " " and sentence[i+1] != " " and sentence[i + 1] != symbol)
+	number = number+1
+end for
+print (" number of words is :" number)
+
+--------------------------------------------------------------------------------------
+Exercise 8: 
+Write pseudocode for a program that takes a list of numbers as input and displays the sum of all the positive numbers in the list.
+
+Assume the list of numbers to be list and sum of all the positive numbers is sum
+print ("enter a list of numbers :")
+read list
+sum = 0
+array[] = list.split(",")
+for i = o to array.length
+	if (array[i] > 0)
+		sum = sum + array[i]
+	end if
+end for
+print(" the sum of all positif numbers is :" sum)
+
+--------------------------------------------------------------------------------------
+Exercise 9:
+Write a program that reads in 7 different numbers, then prints out the smallest value and also prints out the position of the
+smallest value in the input sequence as a number from 1 to 7.
+
+Assume the smallest value is smallest and position is position
+print (" enter number 1 : ")
+read number
+smallest = number
+position = 1
+for i=2 to 7
+	print("enter number "i ":")
+	read number
+	if(number < smallest):
+		smallest = number
+		position = i
+	end if
+end for
+print("the smallest number is :" smallest " and position is :" position)
+
+--------------------------------------------------------------------------------------
+Exercise 10:
+Write an algorithm allowing to enter 10 integers in an array, and to calculate the number of occurrences of an element N in this array.
+Where N entered by the user.
+
+Assume the arraay is list[10] and number of occurrences is occurrences 
+for i = 0 to 9
+	print ("enter the number :" i+1)
+	read list[i]
+end for
+print(" enter a number :")
+read number
+occurrences = 0
+for i = 0 to 9
+	if list[i] == number
+		occurrences = occurrences + 1
+	end if
+end for
+print ("ths occurrences of :" number "is :" occurrences )
+--------------------------------------------------------------------------------------
+Exercise 11:
+Ecrire un algorithme qui demande la saisie d'un tableau T de 10 entiers, et de mettre les éléments pairs dans un tableau T1
+et les éléments impaires dans un tableau T2. Puis afficher T1 et T2.
+
+Assume the arraay is list[10]
+for i = 0 to 9
+	print ("enter the number :" i+1)
+	read list[i]
+end for
+for i = 0 to 9
+	if list[i] % 2 == 0
+		add list[i] to T1
+	else
+		add list[i] to T2
+end for
+print (" le tableau des nombres pairs T1 est : " T1)
+print (" le tableau des nombres impairs T2 est : " T2)
+---------------------------------------------------------------------------------------
+Exercice 12:
+Write an algorithm that displays the multiplication table of 8. Using the Repeat Until loop.
+
+i = 1
+reapt 
+	print ( " 8 * " i " = " 8*i)
+	i = i+1
+until ( i == 11)
+
+---------------------------------------------------------------------------------------
+Exercice 13:
+A shop offers these customers a 15% reduction for purchase amounts over 200 dh. Write an algorithm to enter the total 
+price excluding tax and calculate the amount including tax taking into account the reduction and VAT=20%.
+
+Assume the amount excluding tax is pht and the amount including tax is pttc
+print (" enter the amount (excluding tax) : ")
+read pht
+pttc = pht + (pht * 0,2)
+if(pttc > 200 ) 
+	pttc = pttc - (pttc*0,15)
+end if
+print ("the amount including tax is : " pttc )
+
+---------------------------------------------------------------------------------------
+Exercice 14:
+Write an algorithm that asks the user for two numbers m and n and then informs them whether the product of these
+two numbers is positive or negative. We include in the program the case where the product can be zero.
+
+Assume ts numbers are m and n
+print ("enter m :")
+read m
+print ("enter n :")
+read n
+if (m == 0 or n == 0)
+	print ("the product of m and n is 0") 
+else if ((m < 0 and n < 0) or (m > 0 and n > 0))
+	print ("the product of m and n is positif")
+else if ((m < 0 and n > 0) or (m > 0 and n < 0))
+	print ("the product is positif")
+
+
+
